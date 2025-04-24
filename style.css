@@ -6,8 +6,8 @@
 }
 
 body {
-   background-color: #7851A9;
-   color: #333;
+   background-color: #4B0082;
+   color: white;
    line-height: 1.6;
    padding: 20px;
   }
@@ -27,7 +27,7 @@ body {
  }
  header p {
   font-size: 1.2rem;
-  color: #333;
+  color: white;
 }
 /* SOBRE */
 #sobre{
@@ -39,7 +39,7 @@ border-radius: 10px;
 box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 #sobre h2{
-  color: #333;
+  color: white;
   margin-bottom: 10px;
 }
 /* PROJETOS e HABILIDADES */
@@ -52,7 +52,7 @@ box-shadow: 0 0 15px rgba(0,0,0,0.1);
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 #projetos h2, #habilidades h2 {
-  color: #333;
+  color: white;
   margin-bottom: 10px;
 }
 /* LISTA DE HABILIDADES */
@@ -64,7 +64,7 @@ box-shadow: 0 0 15px rgba(0,0,0,0.1);
 footer{
   text-align: center;
   font-size: 0.9rem;
-  color: #333;
+  color: white;
 }
 footer a {
   color: #191970;
