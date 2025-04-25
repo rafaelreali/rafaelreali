@@ -20,6 +20,13 @@ nav a{
   transition: color 0.3s ease;
   
 }
+nav a:hover {
+  color: #7851A9;
+}
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
    background-color: #4B0082;
@@ -39,7 +46,7 @@ body {
   font-size: 2.5rem;
  }
  header h1 span{
-  color: black;
+  color: grey;
  }
  header p {
   font-size: 1.2rem;
@@ -86,6 +93,24 @@ footer a {
   color: black;
   text-decoration:none ;
   margin:0 8px;
+}
+
+a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: #7851A9;
+  transform: scale(1.05);
+}
+
+section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 600px) {
