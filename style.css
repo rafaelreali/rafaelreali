@@ -3,10 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif
-}
-
-nav {
+  font-family: 'Times New Roman', Times, serif}
+  nav {
   position: fixed;
   top: 10px;
   width: 90%;
@@ -20,69 +18,46 @@ nav {
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: top 0.3s ease-in-out;
-}
+  transition: top 0.3s ease-in-out;}
 nav a{
   color: #fff;
   font-size: 18px;
   text-decoration: none;
   margin-left: 35px;
-  transition: .3s;
-  
-}
+  transition: .3s; }
 nav a:hover {
-  color:#191970;
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
+  color:#191970;}
+  html {
+  scroll-behavior: smooth;}
 body {
    background: linear-gradient(to bottom right, #7851A9  , #301934 );
    color: white;
    line-height: 1.6;
-   padding: 20px;
-  }
-  #inicio {
+   padding: 20px;}
+#inicio {
     height: 100vh; 
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-  }
-  
-  .inicio-header {
+    align-items: center;}
+.inicio-header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 280px;
-   }
-
-   .texto-inicio {
-    text-align: left;
-   }
-   
-   .texto-inicio h1{
-    font-size: 2rem;
-   }
-
-   .texto-inicio h1 span{
+    gap: 280px;}
+.texto-inicio {
+    text-align: left;}
+.texto-inicio h1{
+    font-size: 2rem;}
+.texto-inicio h1 span{
     color: #191970;
-    font-size: 3rem;
-   }
-  
-  
-  
-  #foto-inicio {
+    font-size: 3rem;}
+#foto-inicio {
     width: 400px; 
     height: 400px; 
     object-fit: contain;
-    animation: float 3s ease-in-out infinite;
-   }
-   @keyframes float {
+    animation: float 3s ease-in-out infinite;}
+@keyframes float {
     0% {
       transform: translateY(0);
     }
@@ -91,44 +66,75 @@ body {
     }
     100% {
       transform: translateY(0);
-    }
-  }
+    }}
+.btn-linkedin {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 15px;
+    padding: 20px 90px;
+    background-color:#301934 ;
+    color: white;
+    text-decoration: none;
+    border-radius: 60px;
+    font-weight: bold;
+    font-size: 30px;
+    transition: background-color 0.3s ease;}
+.btn-linkedin:hover {
+    background-color: #7851A9;}
+#sobre-e-habilidades {
+  text-align: center;
+  padding: 60px 20px;
+  height: 100vh; 
+}
+
+.container-duplo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100%; 
+  font-size: larger;
+  gap: 40px;
+}
+
+.sobre, .habilidades {
+  flex: 1 1 45%;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.sobre h2, .habilidades h2 {
+  color: #191970;
+  margin-bottom: 20px;
+}
+
+.habilidades-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  height: 100%; 
+}
+
+.habilidade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  color: white;
+}
+
+.habilidade img {
+  width: 40px;
+  height: 40px;
+  filter: invert(1);
+  margin-bottom: 8px;
+}    
    
 
-/* SOBRE */
-#sobre-mim{
-height: 100vh;
-margin: 0;
-padding: 0;
-text-align: center;
 
 
-}
-#sobre h2{
-  color: white;
-  text-align: center;
-  align-items: center;
-}
-/* PROJETOS e HABILIDADES */
-#projetos, #habilidades {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-  
-  
-#projetos h2, #habilidades h2 {
-  color: white;
-  margin-bottom: 10px;
-  text-align: center;
-}
-/* LISTA DE HABILIDADES */
-#habilidades ul {
-  list-style: square;
-  padding-left: 20px;
-  text-align: center;
-}
 /* FOOTER*/
 footer{
   text-align: center;
