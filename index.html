@@ -4,18 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rafael Reali | Desenvolvedor Front-End</title>
-  <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
-  <nav>
+<nav>
     <a href="#inicio">Início</a>
     <a href="#sobre-e-habilidades">Sobre mim</a>
     <a href="#projetos">Projetos</a>
-    <a href="#Contato">Contato</a>
-  </nav>
+<a href="#Contato">Contato</a>
+</nav>
 
 
   <section id="inicio">
@@ -32,7 +29,6 @@
     <img src="f28dd753-65a7-4234-b9ef-8dfdfe31c7c4.png" alt="Rafael Reali" id="foto-inicio">
   </header>
   </section>
-
   <section id="sobre-e-habilidades">
     <div class="container-duplo">
       <div class="sobre">
@@ -40,43 +36,55 @@
         <p>Sou <strong>Rafael Reali</strong>, estudante de Sistemas de Informação na Cruzeiro do Sul com previsão de conclusão para <strong>dezembro de 2025</strong>.</p>
         <p>Tenho conhecimentos em <strong>HTML, CSS</strong> e <strong>JavaScript</strong>, e estou sempre buscando crescer como desenvolvedor front-end.</p>
       </div>
-      <div class="habilidades">
+     <div class="habilidades">
         <h2>Habilidades</h2>
+        <div class="descricao-habilidade" id="descricao-habilidade">
+          Passe o mouse sobre um ícone para ver a descrição.
+        </div>
         <div class="habilidades-grid">
-          <div class="habilidade">
+          <div class="habilidade" onmouseover="mostrarDescricao('HTML (HyperText Markup Language) é a linguagem base da web. Utilizada para estruturar conteúdos como textos, imagens, links e muito mais, permitindo que os navegadores interpretem e exibam corretamente uma página.')">
             <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/html5.svg" alt="HTML" />
             <span>HTML</span>
           </div>
-          <div class="habilidade">
+          <div class="habilidade" onmouseover="mostrarDescricao('CSS (Cascading Style Sheets) é responsável por toda a parte visual do site. Com ele, é possível aplicar cores, posicionamentos, fontes, espaçamentos e tornar as interfaces responsivas.')">
             <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/css3.svg" alt="CSS" />
             <span>CSS</span>
           </div>
-          <div class="habilidade">
+          <div class="habilidade" onmouseover="mostrarDescricao('JavaScript é uma linguagem de programação que adiciona interatividade à página. Permite criar animações, formulários dinâmicos, lógicas condicionais e se comunica com servidores.')">
             <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/javascript.svg" alt="JavaScript" />
             <span>JavaScript</span>
           </div>
-          <div class="habilidade">
+          <div class="habilidade" onmouseover="mostrarDescricao('React é uma biblioteca JavaScript focada na criação de interfaces modernas e dinâmicas. Utiliza componentes reutilizáveis e melhora o desempenho e a manutenção de aplicações.')">
             <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/react.svg" alt="React" />
             <span>React</span>
           </div>
-          <div class="habilidade">
+          <div class="habilidade" onmouseover="mostrarDescricao('Git é um sistema de controle de versão. Ele permite acompanhar mudanças no código, colaborar com outros desenvolvedores e reverter alterações quando necessário.')">
             <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/git.svg" alt="Git" />
             <span>Git</span>
           </div>
         </div>
       </div>
-    </div>
   </section>
-
-
-  
-
   <section id="projetos">
     <h2>Projetos</h2>
-    <p>Em breve estarei adicionando meus primeiros projetos aqui!</p>
+    <div class="projetos-grid">
+      <div class="projeto">
+        <img src="Work-In-Progress-Stamp-Vector-Illustrati-Graphics-11432530-1.jpg" alt="Projeto 1">
+        <h3>Nome do Projeto 1</h3>
+        <p>Descrição breve sobre o que o projeto faz ou qual tecnologia usa.</p>
+        <a href="https://link-do-projeto1" target="_blank">Ver Projeto</a>
+      </div>
+  
+      <div class="projeto">
+        <img src="Work-In-Progress-Stamp-Vector-Illustrati-Graphics-11432530-1.jpg" alt="Projeto 2">
+        <h3>Nome do Projeto 2</h3>
+        <p>Descrição breve sobre o que o projeto faz ou qual tecnologia usa.</p>
+        <a href="https://link-do-projeto2" target="_blank">Ver Projeto</a>
+      </div>
+  
+  
+    </div>
   </section>
-
-
 <footer id="Contato">
     <h2>Contato</h2>
     <p>
@@ -97,5 +105,10 @@
  </footer>
 
   <script src="scripts.js"></script>
+  <script>
+    function mostrarDescricao(texto) {
+      document.getElementById("descricao-habilidade").textContent = texto;
+    }
+  </script>
 </body>
 </html>

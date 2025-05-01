@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Times New Roman', Times, serif}
-  nav {
+nav {
   position: fixed;
   top: 10px;
   width: 90%;
@@ -27,7 +27,7 @@ nav a{
   transition: .3s; }
 nav a:hover {
   color:#191970;}
-  html {
+html {
   scroll-behavior: smooth;}
 body {
    background: linear-gradient(to bottom right, #7851A9  , #301934 );
@@ -80,71 +80,110 @@ body {
     font-size: 30px;
     transition: background-color 0.3s ease;}
 .btn-linkedin:hover {
-    background-color: #7851A9;}
+  background-color: #7851A9;}
 #sobre-e-habilidades {
-  text-align: center;
-  padding: 60px 20px;
-  height: 100vh; 
-}
-
+      text-align: center;
+      padding: 60px 20px;
+      height: 100vh;
+      display: flex;
+      align-items: center; }
 .container-duplo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: 100%; 
-  font-size: larger;
-  gap: 40px;
-}
-
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      gap: 40px;}
 .sobre, .habilidades {
-  flex: 1 1 45%;
-  height: 100%; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-}
-
+      flex: 1 1 45%;
+      color: white;
+      font-size: 20px;}
 .sobre h2, .habilidades h2 {
-  color: #191970;
-  margin-bottom: 20px;
-}
-
+      color: #ddd;
+      margin-bottom: 20px;;}
+.descricao-habilidade {
+        height: 400px;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto 30px auto;
+        background: #7851A9 ;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+        padding: 15px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        font-size: larger; }
 .habilidades-grid {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;}
+.habilidade {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80px;
+        cursor: pointer;
+        transition: transform 0.3s;}
+.habilidade:hover {
+        transform: scale(1.1);}
+.habilidade img {
+
+        width: 40px;
+        height: 40px;
+        filter: invert(1);
+        margin-bottom: 8px;}    
+#projetos {
+  text-align: center;
+  padding: 60px 20px;;
+  color: white;
+  height: 100vh;}
+.projetos-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
-  height: 100%; 
+  gap: 40px;
+  margin-top: 30px;}
+.projeto {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);}
+.projeto:hover {
+  transform: scale(1.05);}
+.projeto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;}
+.projeto h3 {
+  color: #ddd;
+  margin-bottom: 10px;
 }
 
-.habilidade {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80px;
-  color: white;
+.projeto a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #191970;
+  text-decoration: none;
+  font-weight: bold;
 }
-
-.habilidade img {
-  width: 40px;
-  height: 40px;
-  filter: invert(1);
-  margin-bottom: 8px;
-}    
-   
-
-
-
 /* FOOTER*/
 footer{
   text-align: center;
   font-size: 0.9rem;
   color: white;
+  bottom: 0;
+  width: 100%;  
 }
 footer a {
-  color: black;
+  color: white;
   text-decoration:none ;
   margin:0 8px;
+  
 }
 
 
