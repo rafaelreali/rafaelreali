@@ -191,41 +191,31 @@ footer a {
 
 
 @media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
 
-  nav {
-    display: flex;
+  header {
     flex-direction: column;
-    align-items: center;
-    background: rgba(25, 25, 112, 0.7);
-    backdrop-filter: blur(10px);
-  }
-
-  nav a {
-    display: block;
-    margin: 10px 0;
-    font-size: 16px;
-  }
-
-  #inicio header {
-    flex-direction: column;
-    padding: 40px 20px;
     text-align: center;
+    padding: 30px 20px;
   }
 
-  #foto-inicio {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+  #inicio img {
     width: 150px;
-    height: auto;
     margin-top: 20px;
   }
 
+ 
   .container-duplo {
     flex-direction: column;
     align-items: center;
-    height: auto;
-    padding: 20px;
+    padding: 30px 20px;
   }
 
   .sobre, .habilidades {
@@ -235,22 +225,53 @@ footer a {
 
   .habilidades-grid {
     justify-content: center;
-    gap: 15px;
+  }
+
+  /* Botão LinkedIn */
+  .linkedin-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  nav a {
+    font-size: 16px;
+    margin: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  #inicio img {
+    width: 120px;
   }
 
   .habilidade {
-    width: 60px;
+    width: 70px;
   }
 
-  .projetos-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+  .habilidade img {
+    width: 30px;
+    height: 30px;
   }
 
-  footer {
-    text-align: center;
-    padding: 20px;
+  .sobre p {
+    font-size: 0.9rem;
+  }
+
+  nav {
+    padding: 10px 0;
+  }
+
+  nav a {
+    font-size: 14px;
+    margin: 6px;
   }
 }
