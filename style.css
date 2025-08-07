@@ -192,6 +192,12 @@ footer a {
 
 @media (max-width: 768px) {
 
+  .inicio-header {
+  flex-direction: column; 
+  gap: 40px; 
+  text-align: center; 
+}
+
   header {
     flex-direction: column;
     text-align: center;
@@ -206,10 +212,11 @@ footer a {
     font-size: 1.1rem;
   }
 
-  #inicio img {
-    width: 150px;
-    margin-top: 20px;
-  }
+#foto-inicio {
+  width: 250px; 
+  height: 250px;
+  
+}
 
  
   .container-duplo {
