@@ -19,8 +19,6 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
 
-function mostrarDescricao(texto) {
-      document.getElementById("descricao-habilidade").textContent = texto;
-    }
+
 
  
