@@ -4,112 +4,154 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rafael Reali | Desenvolvedor Front-End</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
   <link rel="stylesheet" href="css/style.css">
   <script src="js/scripts.js" defer></script>
 </head>
 <body>
-<nav>
-    <a href="#inicio">Início</a>
-    <a href="#sobre-e-habilidades">Sobre mim</a>
-    <a href="#projetos">Projetos</a>
-<a href="#Contato">Contato</a>
-</nav>
-
-
-  <section id="inicio">
-  <header class="inicio-header">
-    <div class="texto-inicio">
-     <h1>Oi, eu sou <br><span>Rafael Reali.</span><br>Desenvolvedor Front-end</h1> 
-     <a href="https://www.linkedin.com/in/rafael-reali-82237820b/" target="_blank" class="btn-linkedin">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;">
-        <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 24V7h5v17H0zm7.5 0h5V14c0-2.5 3-2.7 3 0v10h5V13c0-5.5-6-5.3-8 0V7h-5v17z"/>
-      </svg>
-      LinkedIn
-    </a>
+  <nav id="navbar">
+    <div class="nav-links">
+      <a href="#inicio">Início</a>
+      <a href="#sobre-e-habilidades">Sobre mim</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
     </div>
-    <img src="img/f28dd753-65a7-4234-b9ef-8dfdfe31c7c4.png" alt="Rafael Reali" id="foto-inicio">
-  </header>
+  </nav>
+
+  <section id="inicio" class="reveal">
+    <header class="inicio-header">
+      <div class="texto-inicio">
+        <p class="saudacao">Olá, eu sou</p>
+        <h1>Rafael Reali.</h1>
+        <h2 class="typing-text">Desenvolvedor Front-end<span class="cursor">|</span></h2> 
+        
+        <a href="https://www.linkedin.com/in/rafael-reali-82237820b/" target="_blank" class="btn-primary">
+          <i data-lucide="linkedin"></i>
+          Vamos nos conectar
+        </a>
+      </div>
+      <div class="img-container">
+        <img src="img/f28dd753-65a7-4234-b9ef-8dfdfe31c7c4.png" alt="Rafael Reali" id="foto-inicio">
+        <div class="glow"></div>
+      </div>
+    </header>
   </section>
-  <section id="sobre-e-habilidades">
+
+  <section id="sobre-e-habilidades" class="reveal">
     <div class="container-duplo">
       <div class="sobre">
-        <h2>Sobre mim</h2>
-        <p>Sou <strong>Rafael Reali</strong>, estudante de Sistemas de Informação na Cruzeiro do Sul com previsão de conclusão para <strong>dezembro de 2025</strong>.</p>
-        <p>Tenho conhecimentos em <strong>HTML, CSS</strong> e <strong>JavaScript</strong>, e estou sempre buscando crescer como desenvolvedor front-end.</p>
+        <h2 class="section-title">Sobre mim</h2>
+        <p>Sou <strong>Rafael Reali</strong>, estudante de Sistemas de Informação na Cruzeiro do Sul com previsão de conclusão para <strong>Abril de 2026</strong>.</p>
+        <p>Sou apaixonado por criar interfaces modernas e funcionais. Tenho foco no ecossistema web moderno e estou sempre buscando evoluir minhas habilidades para entregar a melhor experiência ao usuário.</p>
       </div>
-     <div class="habilidades">
-        <h2>Habilidades</h2>
+      
+      <div class="habilidades">
+        <h2 class="section-title">Habilidades</h2>
         <div class="descricao-habilidade" id="descricao-habilidade">
-          Passe o mouse sobre um ícone para ver a descrição.
+          <p id="texto-descricao">Passe o mouse sobre um ícone para ver a descrição.</p>
         </div>
+        
         <div class="habilidades-grid">
-          <div class="habilidade" onmouseover="mostrarDescricao('HTML (HyperText Markup Language) é a linguagem base da web. Utilizada para estruturar conteúdos como textos, imagens, links e muito mais, permitindo que os navegadores interpretem e exibam corretamente uma página.')">
+          <div class="habilidade" data-desc="HTML (HyperText Markup Language) é a linguagem base da web. Utilizada para estruturar conteúdos permitindo que os navegadores interpretem corretamente a página.">
             <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/html5.svg" alt="HTML" />
             <span>HTML</span>
           </div>
-          <div class="habilidade" onmouseover="mostrarDescricao('CSS (Cascading Style Sheets) é responsável por toda a parte visual do site. Com ele, é possível aplicar cores, posicionamentos, fontes, espaçamentos e tornar as interfaces responsivas.')">
+          <div class="habilidade" data-desc="CSS (Cascading Style Sheets) é responsável pela parte visual do site, garantindo layouts responsivos, animações e estilização avançada.">
             <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/css3.svg" alt="CSS" />
             <span>CSS</span>
           </div>
-          <div class="habilidade" onmouseover="mostrarDescricao('JavaScript é uma linguagem de programação que adiciona interatividade à página. Permite criar animações, formulários dinâmicos, lógicas condicionais e se comunica com servidores.')">
+          <div class="habilidade" data-desc="JavaScript é a linguagem que adiciona interatividade à página, manipulando o DOM e consumindo APIs para criar aplicações dinâmicas.">
             <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/javascript.svg" alt="JavaScript" />
             <span>JavaScript</span>
           </div>
-          <div class="habilidade" onmouseover="mostrarDescricao('React é uma biblioteca JavaScript focada na criação de interfaces modernas e dinâmicas. Utiliza componentes reutilizáveis e melhora o desempenho e a manutenção de aplicações.')">
+          <div class="habilidade" data-desc="TypeScript é um superconjunto sintático estrito de JavaScript que adiciona tipagem estática opcional à linguagem, garantindo códigos mais seguros.">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/typescript.svg" alt="TypeScript" />
+            <span>TypeScript</span>
+          </div>
+          <div class="habilidade" data-desc="React é uma biblioteca JavaScript focada na criação de interfaces modernas, utilizando componentes reutilizáveis baseados em estados e propriedades.">
             <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/react.svg" alt="React" />
             <span>React</span>
           </div>
-          <div class="habilidade" onmouseover="mostrarDescricao('Git é um sistema de controle de versão. Ele permite acompanhar mudanças no código, colaborar com outros desenvolvedores e reverter alterações quando necessário.')">
+          <div class="habilidade" data-desc="Git é um sistema de controle de versão que permite acompanhar mudanças no código, facilitando o trabalho em equipe e o versionamento seguro.">
             <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/git.svg" alt="Git" />
             <span>Git</span>
           </div>
         </div>
       </div>
-  </section>
-  <section id="projetos">
-    <h2>Projetos</h2>
-   <div class="projetos-grid">
-
-  <div class="projeto">
-    <img src="img/monitor de glicemia.png" alt="Projeto 1">
-    <h3>Monitor de Glicemia</h3>
-    <p>Um aplicativo web simples e moderno para monitorar e registrar leituras de glicemia, construído com React e Firebase.</p>
-    <a href="https://monitor-glicemia.vercel.app/" target="_blank">Ver Projeto</a>
-  </div> <div class="projeto">
-    <img src="img/projeto2.png" alt="Projeto 2">
-    <h3>Cupcake Lovers</h3>
-    <p>Um aplicativo web Full Stack, um e-commerce de cupcakes funcional e seguro! 🧁</p>
-    <a href="https://tcc-cupcakelovers.vercel.app/" target="_blank">Ver Projeto</a>
-  </div> 
-  <div class="projeto">
-    <img src="img/calculadora imc.png" alt="Projeto 3">
-    <h3>Calculadora de IMC</h3>
-    <p>Um aplicativo web simples para calcular o IMC, construido com HTML, CSS e JS</p>
-    <a href="https://rafaelreali.github.io/CALCULADORA-IMC/" target="_blank">Ver Projeto</a>
-  </div>
-     
-  
     </div>
   </section>
-<footer id="Contato">
-    <h2>Contato</h2>
-    <p>
-      <a href="mailto:rafaelreali2011@hotmail.com">
-        <i data-lucide="mail"></i> Email
-      </a>
-    </p>
-    <p>
-      <a href="https://www.linkedin.com/in/rafael-reali-82237820b/" target="_blank">
-        <i data-lucide="linkedin"></i> LinkedIn
-      </a>
-    </p>
-    <p>
-      <a href="https://github.com/rafaelreali" target="_blank">
-        <i data-lucide="github"></i> GitHub
-      </a>
-    </p>
- </footer>
 
-  
+  <section id="projetos" class="reveal">
+    <h2 class="section-title">Meus Projetos</h2>
+    <div class="projetos-grid">
+      <div class="projeto-card">
+        <div class="projeto-img-wrapper">
+          <img src="img/monitor de glicemia.png" alt="Monitor de Glicemia">
+        </div>
+        <div class="projeto-content">
+          <h3>Monitor de Glicemia</h3>
+          <p>Aplicativo web moderno para monitorar e registrar leituras de glicemia, construído com React e Firebase.</p>
+          <a href="https://monitor-glicemia.vercel.app/" target="_blank" class="btn-outline">Ver Projeto <i data-lucide="external-link" class="icon-sm"></i></a>
+        </div>
+      </div> 
+      
+      <div class="projeto-card">
+        <div class="projeto-img-wrapper">
+          <img src="img/projeto2.png" alt="Cupcake Lovers">
+        </div>
+        <div class="projeto-content">
+          <h3>Cupcake Lovers</h3>
+          <p>Aplicativo web Full Stack completo. Um e-commerce de cupcakes funcional, seguro e com painel administrativo.</p>
+          <a href="https://tcc-cupcakelovers.vercel.app/" target="_blank" class="btn-outline">Ver Projeto <i data-lucide="external-link" class="icon-sm"></i></a>
+        </div>
+      </div> 
+      
+      <div class="projeto-card">
+        <div class="projeto-img-wrapper">
+          <img src="img/calculadora imc.png" alt="Calculadora de IMC">
+        </div>
+        <div class="projeto-content">
+          <h3>Calculadora de IMC</h3>
+          <p>Aplicação web interativa para calcular o Índice de Massa Corporal, construída com HTML, CSS puro e JavaScript.</p>
+          <a href="https://rafaelreali.github.io/CALCULADORA-IMC/" target="_blank" class="btn-outline">Ver Projeto <i data-lucide="external-link" class="icon-sm"></i></a>
+        </div>
+      </div>
+      <div class="projeto-card">
+        <div class="projeto-img-wrapper">
+          <img src="img/controle de gastos.png" alt="Controle de gastos">
+        </div>
+        <div class="projeto-content">
+          <h3>Controle de gastos</h3>
+          <p>Aplicação mobile para controle financeiro, construída com HTML, CSS puro e JavaScript..</p>
+          <a href="https://rafaelreali.github.io/CALCULADORA-IMC/" target="_blank" class="btn-outline">Ver Projeto <i data-lucide="external-link" class="icon-sm"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <div class="footer-content reveal">
+      <h2>Vamos conversar?</h2>
+      <p>Estou sempre aberto a novas oportunidades e desafios.</p>
+      <div class="social-links">
+        <a href="mailto:rafaelreali2011@hotmail.com" class="social-icon">
+          <i data-lucide="mail"></i> Email
+        </a>
+        <a href="https://www.linkedin.com/in/rafael-reali-82237820b/" target="_blank" class="social-icon">
+          <i data-lucide="linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/rafaelreali" target="_blank" class="social-icon">
+          <i data-lucide="github"></i> GitHub
+        </a>
+      </div>
+      <p class="copyright">© 2024 Rafael Reali. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
